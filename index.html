@@ -1,7 +1,96 @@
-<meta http-equiv="refresh" content="0; URL='http://pcat0.github.io/Games-And-Stuff/" />
-<script>
-  window.location = "http://pcat0.github.io/Games-And-Stuff/";
-  window.location.href = "http://pcat0.github.io/Games-And-Stuff/";
-  window.location.assign("http://pcat0.github.io/Games-And-Stuff/");
-  window.location.replace("http://pcat0.github.io/Games-And-Stuff/");
-</script>
+<div class='full' id='p1'>
+  <div class='center'>
+    <svg width='500' height='140'>
+      <defs>
+      <clipPath id='name'>
+        <text class='name' x="250" y="50">PATRICK</text>
+        <text x="250" y="100">AMBLI</text>
+      </clipPath>
+      <clipPath id='motto'>
+        <text class='motto' x="250" y="120">Scripting the web one page at a time.</text>
+        <text class='motto' x="250" y="135" sub>(or something like that)</text>
+      </clipPath>
+    </defs>
+    <path clip-path="url(#name)" stroke="transparent" id="fillBox" fill="#7A0000"/>
+    <text id='tName' class='name' x="250" y="50">
+      <animate attributeName="stroke-dashoffset" dur="3s" begin="0s" to="0" fill="freeze"/>
+      <animate attributeName="stroke-dashoffset" dur="3s" begin="7.8s" to="330" fill="freeze"/>
+      PATRICK
+    </text>
+    <text id='bName' x="250" y="100">
+      <animate attributeName="stroke-dashoffset" dur="3s" begin="0s" to="0" fill="freeze"/>
+      <animate attributeName="stroke-dashoffset" dur="3s" begin="7.8s" to="330" fill="freeze"/>
+      AMBLI
+    </text>
+    <text class='motto' clip-path="url(#motto)" x="250" y="120">
+      <animate attributeName="stroke-dashoffset" dur="3s" begin="2s" to="0" fill="freeze"/>
+      Scripting the web one page at a time.
+    </text>
+    <text class='motto' clip-path="url(#motto)" x="250" y="135" sub>
+      <animate attributeName="stroke-dashoffset" dur="3s" begin="2s" to="0" fill="freeze"/>
+      (or something like that)
+    </text>
+    <animate 
+        xlink:href="#fillBox"
+        id="wave"
+        attributeName="d"
+        dur="6s"
+        begin="1.8s"
+        values="M150 120 q25 -29, 200 0 l0 105 l-200 0 l0 -105;
+                M150 90 q175 36, 200 0 l0 105 l-200 0 l0 -105;
+                M150 60 q40 -33, 200 0 l0 105 l-200 0 l0 -105;
+                M150 20 q120 20, 200 0 l0 105 l-200 0 l0 -105;
+                M150 0 q100 0, 200 0 l0 105 l-200 0 l0 -105;"
+        fill="freeze"/>
+  </svg>
+</div>
+  <div class='socialMedia'>
+    <a onclick="window.open('https://codepen.io/Pcat0')"><svg viewBox="0 0 70 70">
+      <path stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill='RGBA(0,0,0,0)' stroke='RGBA(100,100,100,.3)' d='M5 25 l30 20 30 -20 -30 -20 -30 20 M5 45 l30 20 30 -20 -30 -20 -30 20 z l0 -20 m30 40 l0 -20 m0 -20 l0 -20 m30 40 l0 -20'/>
+      <path stroke='black' stroke-width="3" stroke-linecap="round" stroke-dashoffset='22' stroke-dasharray='21' stroke-linejoin="round" d='M35 5 l0 20'>
+        <animate attributeName="stroke-dashoffset" dur="1.9s" begin="codepen_start.begin + 1s" to="0" fill="freeze"/>
+        <animate attributeName="stroke-dashoffset" dur="1s" begin="codepen_end.begin + 1s" to="22" fill="freeze"/>
+      </path>
+      <path stroke='black' stroke-width="3" stroke-linecap="round" stroke-dashoffset='22' stroke-dasharray='21' d='M35 45 l0 20'>
+        <animate attributeName="stroke-dashoffset" dur="1.8s" begin="codepen_start.begin + .3s" to="0" fill="freeze"/>
+        <animate attributeName="stroke-dashoffset" dur="1s" begin="codepen_end.begin + 1s" to="22" fill="freeze"/>
+      </path>
+      <path stroke='black' stroke-width="3" stroke-linecap="round" stroke-dashoffset='22' stroke-dasharray='21' d='M65 25 l0 20'>
+        <animate attributeName="stroke-dashoffset" dur="1.8s" begin="codepen_start.begin + .7s" to="0" fill="freeze"/>
+        <animate attributeName="stroke-dashoffset" dur="1s" begin="codepen_end.begin + 1s" to="22" fill="freeze"/>
+      </path>
+      <path stroke='black' stroke-width="3" stroke-dashoffset='311' stroke-dasharray='310' stroke-linecap="round" stroke-linejoin="round" fill='RGBA(0,0,0,0)' stroke='black' d='M5 25 l30 20 30 -20 -30 -20 -30 20 l0 20 l30 20 30 -20 -30 -20 -30 20'>
+        <animate id='codepen_start' attributeName="stroke-dashoffset" dur="3s" end='mouseout' begin="mouseover" to="0" fill="freeze"/>
+        <animate id='codepen_end' attributeName="stroke-dashoffset" dur="3s" end='mouseover' begin="mouseout" to="311" fill="freeze"/>
+      </path>
+    </svg></a>
+    <a onclick="window.open('https://github.com/Pcat0')" ><svg viewBox="0 0 100 100">
+      <defs>
+        <clipPath id='github_clip'>
+          <path transform="scale(6.25)" d="M8 0C3.58 0 0 3.58 0 8 c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55 -0.17 0.55 -0.38 0 -0.19 -0.01 -0.82 -0.01 -1.49 -2.01 0.37 -2.53 -0.49 -2.69 -0.94 -0.09 -0.23 -0.48 -0.94 -0.82 -1.13 -0.28 -0.15 -0.68 -0.52 -0.01 -0.53 0.63 -0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07 -0.52 0.28 -0.87 0.51 -1.07 -1.78 -0.2 -3.64 -0.89 -3.64 -3.95 0 -0.87 0.31 -1.59 0.82 -2.15 -0.08 -0.2 -0.36 -1.02 0.08 -2.12 0 0 0.67 -0.21 2.2 0.82 0.64 -0.18 1.32 -0.27 2 -0.27 0.68 0 1.36 0.09 2 0.27 1.53 -1.04 2.2 -0.82 2.2 -0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07 -1.87 3.75 -3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07 -0.01 1.93 -0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path>
+        </clipPath>
+        <mask id='github_wave'>
+          <path fill="white" d="M0 0 l100 0 0 100 -100 0 0 -100"></path>
+          <path>
+            <animate 
+              id="wave"
+              attributeName="d"
+              dur="1s"
+              begin="0s"
+              repeatCount="indefinite"
+              values="
+                      M0 110 q10 10, 20 0 q10 -10, 20 0 q10 10, 20 0 q10 -10, 20 0 q10 10, 20 0 q10 -10,20 0 q10 10, 20 0 l0 -130 -140 0 l0 130;
+                      M0 110 q10 -10, 20 0 q10 10, 20 0 q10 -10, 20 0 q10 10, 20 0 q10 -10, 20 0 q10 10,20 0 q10 -10, 20 0 l0 -130 -140 0 l0 130;
+                      M0 110 q10 10, 20 0 q10 -10, 20 0 q10 10,20 0 q10 -10, 20 0 q10 10, 20 0 q10 10,20 0 q10 -10, 20 0 l0 -130 -140 0 l0 130"
+              fill="freeze"/>
+            <animateTransform type='translate' attributeName="transform" dur="2s" begin="github_on.mouseover" to="0 -120" fill='freeze'/>
+            <animateTransform type='translate' attributeName="transform" dur="2s" begin="github_on.mouseout" to="0 0" fill='freeze'/>
+          </path>
+        </mask>
+      </defs> 
+      <path clip-path="url(#github_clip)" fill="RGBA(100,100,100,.3)" d="M0 0 l100 0 0 100 -100 0 0 -100"/>
+      <path mask="url(#github_wave)" clip-path="url(#github_clip)" d="M0 0 l100 0 0 100 -100 0 0 -100"/>
+      <circle id='github_on' cx="50" cy="50" r="50" fill="RGBA(0,0,0,0)"/>
+    </svg></a>
+  </div>
+</div>
