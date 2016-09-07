@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+body {
+  position: absolute;
+  height:100%;
+  width:100%;
+  padding:0px;
+  margin:0px;
+  overflow: hidden;
+}
+div.full {
+  position: relative;
+  height:100%;
+  width:100%;
+  
+  background: #ebebebff;
+  background-image: url(http://api.thumbr.it/whitenoise-370x370.png?background=ebebebff&noise=ffffff&density=62&opacity=2);
+}
+div.center {  
+  text-align: center;
+  
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+text.name, text.name+text {
+  text-anchor: middle;
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  
+  fill-opacity: 0;
+  
+  stroke: #444;
+  stroke-dasharray: 330;
+  stroke-dashoffset: 330;
+  stroke-width: 2;
+}
+text.motto {
+  font-family: "Raleway";
+  text-anchor: middle;
+  font-size: 20px;
+  
+  fill-opacity: 0;
+  
+  stroke: rgb(0, 0, 102);
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  stroke-width:2;
+}
+text.motto[sub] {
+   font-size: 13px;
+}
+div.socialMedia {
+  position: absolute;
+  bottom:0px;
+  padding:10px;
+}
+div.socialMedia * {
+  width:50px;
+  height:50px;
+  cursor:pointer;
+}
